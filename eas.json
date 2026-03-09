@@ -1,19 +1,9 @@
-cat > eas.json << 'MYEOF'
 {
   "cli": {
-    "version": ">= 18.1.0",
-    "appVersionSource": "remote"
+    "version": ">= 18.1.0"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
-    "preview": {
-      "distribution": "internal"
-    },
     "production": {
-      "autoIncrement": true,
       "android": {
         "buildType": "apk"
       }
@@ -23,4 +13,3 @@ cat > eas.json << 'MYEOF'
     "production": {}
   }
 }
-MYEOF
